@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">    
+</head>
+<body>
+    <div class="container">
+        <h1>House Price Prediction</h1>
+        <form action="/predict" method="post">
+            <div class="form-group">
+                <label for="area">Area (in sqft):</label>
+                <input type="number" class="form-control" id="area" name="area" required>
+            </div>
+            <div class="form-group">
+                <label for="bedrooms">Bedrooms:</label>
+                <input type="number" class="form-control" id="bedrooms" name="bedrooms" required>
+            </div>
+            <div class="form-group">
+                <label for="bathrooms">Bathrooms:</label>
+                <input type="number" class="form-control" id="bathrooms" name="bathrooms" required>
+            </div>
+            <div class="form-group">
+                <label for="stories">Stories:</label>
+                <input type="number" class="form-control" id="stories" name="stories" required>
+            </div>
+            <div class="form-group">
+                <label for="mainroad">Main Road:</label>
+                <select class="form-control" id="mainroad" name="mainroad" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="guestroom">Guest Room:</label>
+                <select class="form-control" id="guestroom" name="guestroom" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="basement">Basement:</label>
+                <select class="form-control" id="basement" name="basement" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="hotwaterheating">Hot Water Heating:</label>
+                <select class="form-control" id="hotwaterheating" name="hotwaterheating" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="airconditioning">Air Conditioning:</label>
+                <select class="form-control" id="airconditioning" name="airconditioning" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="parking">Parking:</label>
+                <input type="number" class="form-control" id="parking" name="parking" required>
+            </div>
+            <div class="form-group">
+                <label for="prefarea">Preferred Area:</label>
+                <select class="form-control" id="prefarea" name="prefarea" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="furnishingstatus">Furnishing Status:</label>
+                <select class="form-control" id="furnishingstatus" name="furnishingstatus" required>
+                    <option value="furnished">Furnished</option>
+                    <option value="semi-furnished">Semi-Furnished</option>
+                    <option value="unfurnished">Unfurnished</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
